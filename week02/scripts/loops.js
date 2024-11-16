@@ -46,3 +46,17 @@ function AppendFoodItem(food){
     foodsElement.appendChild(favoriteFood);
 }
 myInfo.favoriteFood.forEach(AppendFoodItem);
+
+
+const foodsElement1 = document.querySelector('#favorite-foods');
+  function mapFoodItem(food) {
+    let favoriteFood = document.createElement('li');
+    favoriteFood.textContent = food;
+    return favoriteFood;
+  }
+
+function mapFoodItemSmall(food) {
+return `<li>${food}</li>`;
+}
+const foodListElements = myInfo.favoriteFoods.map(mapFoodItem);
+foodsElement.innerHTML = foodListElements.join('');

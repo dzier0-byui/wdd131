@@ -1,9 +1,9 @@
-/* Grid container for images */
+
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default 3 items per row */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
-    justify-items: center; /* Center the images within the grid */
+    justify-items: center; 
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
@@ -74,27 +74,31 @@ nav {
 }
 
 .topnav a.icon {
-    display: none; /* Hide hamburger icon by default */
+    display: none; 
     position: absolute;
     right: 20px;
     top: 15px;
 }
 
 .topnav a.close-icon {
-    display: none; /* Hide close icon by default */
+    display: none; 
     position: absolute;
     right: 20px;
     top: 15px;
 }
 
 .topnav.open a.icon {
-    display: none; /* Hide hamburger icon when menu is open */
+    display: none;
 }
 
 .topnav.open a.close-icon {
-    display: block; /* Show close icon when menu is open */
+    display: block;
 }
 
+.page-title {
+    margin-top: 20px;
+    text-align: center;
+}
 
 /* Footer styles */
 footer {

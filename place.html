@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - South Afirca">
+    <meta name="author" content="Cody Dzierzon">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital@0;1&family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>South Africa</h1>
+    </header>
+    <main>
+        
+
+        <picture class = hero-img>
+            <source srcset="images/SA-ostrich.webp" media="(min-width: 768px)">
+            <img src="images/SA-giraffe.webp" alt="Hero image">
+        </picture>
+
+        <section>
+            <div class="data">
+                <h2>Data</h2>
+                <div class="information">
+                    <h3>Area:</h3><p>1,221,037 km²</p>
+                    <h3>Population:</h3><p>60 million</p>
+                    <h3>Capital:</h3><p>Pretoria (administrative), Bloemfontein (judicial), Cape Town (legislative)</p>
+                    <h3>Languages:</h3><p>11 official languages including Zulu, Xhosa, Afrikaans, and English</p>
+                    <h3>Currency:</h3><p>South African Rand (ZAR)</p>
+                    <h3>Time Zone:</h3><p>South Africa Standard Time (UTC+2)</p>
+                    <h3>Calling Code:</h3><p>+27</p>
+                    <h3>Internet TLD:</h3><p>.za</p>
+                </div>
+            </div>
+            <div class="weather">
+                <h2 id="weather">Weather</h2>
+                <img src="images/weather-rainy.svg" alt="weather">
+                <div class="information">
+                    <h3>Temperature:</h3><p>18°C (64°F)</p>
+                    <h3>Conditions:</h3><p>Partly Cloudy</p>
+                    <h3>Wind:</h3><p>10 km/h</p>
+                    <h3>Wind Chill:</h3><p>16°C (61°F)</p>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Cody Dzierzon - United States</p>
+        <p>Last modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

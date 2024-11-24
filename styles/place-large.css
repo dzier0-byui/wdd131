@@ -1,0 +1,35 @@
+@media (min-width: 768px) {
+    .hero-img {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .data, .weather {
+        position: absolute;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 30%;
+        max-width: 400px;
+    }
+
+    .data {
+        top: 200px; 
+        left: 20px;
+    }
+
+    .weather {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    #weather::after {
+        content: " ☀️";
+    }
+
+    .weather img {
+        display: none;
+    }
+}

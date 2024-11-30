@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWDD 131 - Dynamic Web Fundamentals - Cody Dzierzon</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Cody Dzierzon Temples">
+    <meta name="author" content="Cody Dzierzon">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital@0;1&family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <h1>Temples</h1>
+            <div id="myLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#old">Old</a>
+                <a href="#new">New</a>
+                <a href="#large">Large</a>
+                <a href="#small">Small</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="javascript:void(0);" class="close-icon" onclick="toggleMenu()"> 
+                <i class="fa fa-times"></i>
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="page-title">Home</h2>
+        <div class="image-grid">
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Cody Dzierzon - United States</p>
+        <p>Last modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

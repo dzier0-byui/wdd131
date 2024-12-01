@@ -3,6 +3,26 @@
     --text-color: white;    
 }
 
+.temple-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .temple-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .temple-card h2 {
+    margin: 8px 0;
+  }
+  .temple-card p {
+    margin: 4px 0;
+  }
+
 
 .image-grid {
     display: grid;

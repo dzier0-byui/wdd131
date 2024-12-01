@@ -102,3 +102,60 @@ const temples = [
     // Add more temple objects here...
   ];
   
+  const templeContainer = document.getElementById("temple-container");
+
+  function renderTemples(filteredTemples) {
+    templeContainer.innerHTML = ""; 
+    filteredTemples.forEach(temple => {
+        const card = document.createElement("div");
+        card.classList.add("temple-card");
+
+        card.innerHTML = `
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+            <h2>${temple.templeName}</h2>
+            <p><strong>Location:</strong> ${temple.location}</p>
+            <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+            <p><strong>Area:</strong> ${temple.area} sq. ft.</p>
+        `;
+
+        templeContainer.appendChild(card);
+    });
+}
+
+function filterOldTemples() {
+    const oldTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year < 1900;
+    });
+    renderTemples(oldTemples);
+}
+
+function filterNewTemples() {
+    const newTemples = temples.filter(temple => {
+        const year = parseInt(temple.dedicated.split(",")[0]);
+        return year > 2000;
+    });
+    renderTemples(newTemples);
+}
+
+function filterLargeTemples() {
+    const largeTemples = temples.filter(temple => temple.area > 90000);
+    renderTemples(largeTemples);
+}
+
+function filterSmallTemples() {
+    const smallTemples = temples.filter(temple => temple.area < 10000);
+    renderTemples(smallTemples);
+}
+
+function displayAllTemples() {
+    renderTemples(temples);
+}
+
+document.querySelector('a[href="#home"]').addEventListener("click", displayAllTemples);
+document.querySelector('a[href="#old"]').addEventListener("click", filterOldTemples);
+document.querySelector('a[href="#new"]').addEventListener("click", filterNewTemples);
+document.querySelector('a[href="#large"]').addEventListener("click", filterLargeTemples);
+document.querySelector('a[href="#small"]').addEventListener("click", filterSmallTemples);
+
+displayAllTemples();

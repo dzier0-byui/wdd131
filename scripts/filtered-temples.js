@@ -84,12 +84,12 @@ const temples = [
         "https://churchofjesuschristtemples.org/assets/img/temples/deseret-peak-utah-temple/deseret-peak-utah-temple-54400-main.jpg"
     },
     {
-        templeName: "Portland",
-        location: "Lake Oswego, Oregon",
-        dedicated: "1989, August, 19-21",
-        area: 80500,
+        templeName: "Meridian",
+        location: "Meridian, Idaho",
+        dedicated: "2017, November, 19",
+        area: 67331,
         imageUrl:
-        "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+        "https://churchofjesuschristtemples.org/assets/img/temples/meridian-idaho-temple/meridian-idaho-temple-3302-main.jpg"
     },
     {
         templeName: "San Diego",

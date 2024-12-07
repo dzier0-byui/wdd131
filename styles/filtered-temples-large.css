@@ -1,0 +1,36 @@
+
+@media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+        .topnav {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .topnav #myLinks {
+            padding-top: 20px;
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .topnav.open #myLinks {
+            display: block;
+        }
+
+        .topnav a.icon {
+            padding-top: 15px;
+            display: block; 
+        }
+
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}

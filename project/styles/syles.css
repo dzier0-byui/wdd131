@@ -1,0 +1,38 @@
+:root{
+    --headings: #004d00;
+    --text: #666;
+    --accents: #ff6600;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #004d00; 
+}
+
+p {
+    color: #666;
+}
+
+.highlight {
+    color: #ff6600; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wireframe {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.wireframe img {
+    width: 100%;
+}

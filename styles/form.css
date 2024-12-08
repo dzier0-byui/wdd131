@@ -110,6 +110,15 @@ input[type="submit"]:hover {
     color: #ffcc00;
 }
 
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);

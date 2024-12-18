@@ -1,0 +1,150 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #fff7e6;
+    color: #333;
+}
+nav {
+    background-color: #d46f4d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.habitat-color{
+    background-color: #337536;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.7rem;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(206, 206, 206);
+}
+#hero {
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+.content {
+    margin-top: 420px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.section img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+form {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+form input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    padding: 10px 20px;
+    background-color: #d46f4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #b55739;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #d46f4d;
+    color: white;
+    margin-top: 20px;
+}
+.title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: 
+        -2px -2px 2px white, 
+        2px -2px 2px white, 
+        -2px 2px 2px white, 
+        2px 2px 2px white;
+    margin-top: 140px;
+}
+
+
+
+/* Habitats */
+
+.content-grid {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 20px;
+    margin-top: 420px;
+    padding: 20px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.content-section img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Travel */
+.travel-content
+{
+    background: rgba(255, 255, 255, 0.9);
+    padding-bottom: 50px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.travel-content img{
+    max-width: 470px;
+}

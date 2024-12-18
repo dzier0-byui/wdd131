@@ -10,7 +10,7 @@ p{
     font-size: 1.2rem;
 }
 nav {
-    background-color: #d46f4d;
+    background-color: #6E3121;
     color: white;
     display: flex;
     justify-content: center;
@@ -21,11 +21,11 @@ nav a.active {
     font-weight: bold;
 }
 .habitat-color{
-    background-color: #337536;
+    background-color: #314e32;
 }
 .travel-color
 {
-    background-color: #9b6350;
+    background-color: #5f5451;
 }
 nav a {
     color: white;
@@ -84,7 +84,7 @@ form input {
 }
 form button {
     padding: 10px 20px;
-    background-color: #d46f4d;
+    background-color: #6E3121;
     color: white;
     border: none;
     border-radius: 4px;
@@ -96,7 +96,7 @@ form button:hover {
 footer {
     text-align: center;
     padding: 15px;
-    background-color: #d46f4d;
+    background-color: #6E3121;
     color: white;
     margin-top: 20px;
 }
